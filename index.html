@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="top-content">
+
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <h1>Users</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 form-box">
+                        <div class="form-bottom users-form">
+                            <h2>Добавить</h2>
+                            <form role="form" action="" method="post">
+                                <div class="form-group">
+                                    <label class="sr-only" for="user-first-name">Имя</label>
+                                    <input type="text" name="first-name" placeholder="Имя..."
+                                        class="user-first-name form-control" id="user-first-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="user-last-name">Фамилия</label>
+                                    <input type="text" name="last-name" placeholder="Фамилия..."
+                                        class="user-last-name form-control" id="user-last-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="user-position">Должность</label>
+                                    <select name="position" class="user-position custom-select form-control"
+                                        id="user-position">
+                                        <option value="" selected>Должность</option>
+                                        <option name="user-position-programmer" value="Программист">Программист</option>
+                                        <option name="user-position-manager" value="Менеджер">Менеджер</option>
+                                        <option name="user-position-tester" value="Тестировщик">Тестировщик</option>
+                                    </select>                                 
+                                </div>
+                                <input type="hidden" name="event" id="user-form-event" value="create">
+                                <input type="hidden" name="user-id" id="user-id" value="">
+                                <div class="create-button">
+                                <button class="btn" type="submit">Добавить</button>
+                                </div>
+                                <div class="edit-button">
+                                <button class="btn" type="submit">Сохранить</button>
+                                <button class="btn edit-close" type="button">Отмена</button>
+                                </div>
+                            </form>
+                            <div class="message"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 users-list-box form-box">
+                        <div class="form-bottom">
+                            <h2>Список</h2>
+                            <div class="users-list"></div>
+                            <div class="message"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 goods-list-box form-box">
+                        <div class="form-bottom">
+                            <h2>Товары</h2>
+                            <div class="goods-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>
