@@ -21,4 +21,4 @@ jobs:
           REMOTE_USER: "admin"
           SOURCE: ""
           TARGET: "/home/admin/web/crudphpjquery.alenev.name/public_html"
-          EXCLUDE: "/.git/, /.github/, config.php"
+          EXCLUDE: "/.git/, /.github/, config.php, telenorma.sql"
