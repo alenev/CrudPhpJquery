@@ -11,9 +11,10 @@ class DB
     protected $query_closed = TRUE;
     public $query_count = 0;
 
-    public function __construct($dbhost = 'localhost', $dbuser = 'root', $dbpass = '', $dbname = '')
+    public function __construct($dbhost, $dbuser, $dbpass, $dbname, $charset)
     {
         $this->connection = new \mysqli($dbhost, $dbuser, $dbpass, $dbname);
+        $this->connection->set_charset($charset);
         if ($this->connection->connect_error) {
             $this->error('Failed to connect to MySQL - ' . $this->connection->connect_error);
         }

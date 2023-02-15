@@ -4,7 +4,7 @@ require './config.php';
 require './DB.php';
 
 $db_settings =
-    $db = new Database\DB($dbhost, $dbuser, $dbpass, $dbname);
+    $db = new Database\DB($dbhost, $dbuser, $dbpass, $dbname, $charset);
 
 
 if (!$db) {
